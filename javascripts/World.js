@@ -102,7 +102,7 @@ var data = [        //liste de tout les pays
 {"pays": "Îles Vierges Américaines", "image": "<img src=../assets/img/Iles_Vierges_Americaines.png class=col-12 col-lg-12 mt-4>"},
 {"pays": "Îles Vierges Britanniques", "image": "<img src=../assets/img/Iles_Vierges_Britanniques.png class=col-12 col-lg-12 mt-4>"},
 {"pays": "Inde", "image": "<img src=../assets/img/Inde.png class=col-12 col-lg-12 mt-4>"},
-{"pays": "ArIndonésiegentine", "image": "<img src=../assets/img/Indonesie.png class=col-12 col-lg-12 mt-4>"},
+{"pays": "Indonésie", "image": "<img src=../assets/img/Indonesie.png class=col-12 col-lg-12 mt-4>"},
 {"pays": "Irak", "image": "<img src=../assets/img/Irak.png class=col-12 col-lg-12 mt-4>"},
 {"pays": "Irlande Du Nord", "image": "<img src=../assets/img/Irlande_Du_Nord.png class=col-12 col-lg-12 mt-4>"},
 {"pays": "Iran", "image": "<img src=../assets/img/Iran.png class=col-12 col-lg-12 mt-4>"},
