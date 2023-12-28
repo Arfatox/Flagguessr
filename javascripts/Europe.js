@@ -69,7 +69,7 @@ function reponse() {                                                          //
   console.log("ok")                                                           //le popup avec fond vert si bon rouge sinon
   reponse = document.querySelector("input").value                             //
   if (reponse.toLowerCase() == Pays.toLowerCase()) {                          //
-    document.querySelector(".popuptext").style.backgroundColor = "lightgreen" //
+    document.querySelector(".popuptext").style.backgroundColor = "#1ab315"    //
     document.getElementById("send").disabled = true;                          //
    }                                                                          //
   else {                                                                      //
