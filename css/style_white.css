@@ -268,6 +268,16 @@ h1{
   color:#001c31;
 }
 
+.ennav{
+  margin-top: -4px;
+  margin-left: 20px;
+  height: 32px;
+  border-radius: 2px;
+}
+.ennav:hover{
+  cursor: pointer;
+}
+
 #refresh{
   margin-top:3.6em;
 }
