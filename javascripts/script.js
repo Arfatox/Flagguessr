@@ -4,7 +4,7 @@ var data = [        //liste de tout les pays
 {"pays": "Afghanistan", "image": "<img src=../assets/img/Afghanistan.png class=col-12 col-lg-12 mt-4>"},
 {"pays": "Afrique Du Sud", "image": "<img src=../assets/img/Afrique_Du_Sud.png class=col-12 col-lg-12 mt-4>"},
 {"pays": "Albanie", "image": "<img src=../assets/img/Albanie.png class=col-12 col-lg-12 mt-4>"},
-{"pays": "Algerie", "image": "<img src=../assets/img/Algerie.png class=col-12 col-lg-12 mt-4>"},
+{"pays": "Algérie", "image": "<img src=../assets/img/Algerie.png class=col-12 col-lg-12 mt-4>"},
 {"pays": "Allemagne", "image": "<img src=../assets/img/Allemagne.png class=col-12 col-lg-12 mt-4>"},
 {"pays": "Andorre", "image": "<img src=../assets/img/Andorre.png class=col-12 col-lg-12 mt-4>"},
 {"pays": "Angola", "image": "<img src=../assets/img/Angola.png class=col-12 col-lg-12 mt-4>"},
@@ -198,3 +198,19 @@ var data = [        //liste de tout les pays
 {"pays": "Zambie", "image": "<img src=../assets/img/Zambie.png class=col-12 col-lg-12 mt-4>"},
 {"pays": "Zimbabwe", "image": "<img src=../assets/img/Zimbabwe.png class=col-12 col-lg-12 mt-4>"},
 ]
+
+var en = document.getElementById("en");
+en.style.display = "none";
+
+function language() {
+var fr = document.getElementById("fr");
+
+    if (fr.style.display === "none") {
+      fr.style.display = "block";
+      en.style.display = "none";
+    } 
+    else {
+      fr.style.display = "none";
+      en.style.display = "block";
+    }
+}
