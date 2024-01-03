@@ -2,7 +2,7 @@ let Pays;
 let Reponse;
 var data = [        //liste de tout les pays
 {"pays": "Afghanistan", "image": "<img src=../assets/img/Afghanistan.png class=col-12 col-lg-12 mt-4>"},
-{"pays": "Afrique Du Sud", "image": "<img src=../assets/img/Afrique_Du_Sud.png class=col-12 col-lg-12 mt-4>"},
+{"pays": "Afrique du Sud", "image": "<img src=../assets/img/Afrique_Du_Sud.png class=col-12 col-lg-12 mt-4>"},
 {"pays": "Albanie", "image": "<img src=../assets/img/Albanie.png class=col-12 col-lg-12 mt-4>"},
 {"pays": "Algérie", "image": "<img src=../assets/img/Algerie.png class=col-12 col-lg-12 mt-4>"},
 {"pays": "Allemagne", "image": "<img src=../assets/img/Allemagne.png class=col-12 col-lg-12 mt-4>"},
@@ -41,8 +41,8 @@ var data = [        //liste de tout les pays
 {"pays": "Chypre", "image": "<img src=../assets/img/Chypre.png class=col-12 col-lg-12 mt-4>"},
 {"pays": "Colombie", "image": "<img src=../assets/img/Colombie.png class=col-12 col-lg-12 mt-4>"},
 {"pays": "Comores", "image": "<img src=../assets/img/Comores.png class=col-12 col-lg-12 mt-4>"},
-{"pays": "Corée Du Nord", "image": "<img src=../assets/img/Coree_Du_Nord.png class=col-12 col-lg-12 mt-4>"},
-{"pays": "Corée Du Sud", "image": "<img src=../assets/img/Coree_Du_Sud.png class=col-12 col-lg-12 mt-4>"},
+{"pays": "Corée du Nord", "image": "<img src=../assets/img/Coree_Du_Nord.png class=col-12 col-lg-12 mt-4>"},
+{"pays": "Corée du Sud", "image": "<img src=../assets/img/Coree_Du_Sud.png class=col-12 col-lg-12 mt-4>"},
 {"pays": "Costa Rica", "image": "<img src=../assets/img/Costa_Rica.png class=col-12 col-lg-12 mt-4>"},
 {"pays": "Côte d'Ivoire", "image": "<img src=../assets/img/Cote_d'Ivoire.png class=col-12 col-lg-12 mt-4>"},
 {"pays": "Croatie", "image": "<img src=../assets/img/Croatie.png class=col-12 col-lg-12 mt-4>"},
@@ -104,7 +104,7 @@ var data = [        //liste de tout les pays
 {"pays": "Liechtenstein", "image": "<img src=../assets/img/Liechtenstein.png class=col-12 col-lg-12 mt-4>"},
 {"pays": "Lituanie", "image": "<img src=../assets/img/Lituanie.png class=col-12 col-lg-12 mt-4>"},
 {"pays": "Luxembourg", "image": "<img src=../assets/img/Luxembourg.png class=col-12 col-lg-12 mt-4>"},
-{"pays": "Macédoine Du Nord", "image": "<img src=../assets/img/Macedoine_Du_Nord.png class=col-12 col-lg-12 mt-4>"},
+{"pays": "Macédoine du Nord", "image": "<img src=../assets/img/Macedoine_Du_Nord.png class=col-12 col-lg-12 mt-4>"},
 {"pays": "Madagascar", "image": "<img src=../assets/img/Madagascar.png class=col-12 col-lg-12 mt-4>"},
 {"pays": "Malaisie", "image": "<img src=../assets/img/Malaisie.png class=col-12 col-lg-12 mt-4>"},
 {"pays": "Malawi", "image": "<img src=../assets/img/Malawi.png class=col-12 col-lg-12 mt-4>"},
@@ -146,7 +146,7 @@ var data = [        //liste de tout les pays
 {"pays": "Portugal", "image": "<img src=../assets/img/Portugal.png class=col-12 col-lg-12 mt-4>"},
 {"pays": "Qatar", "image": "<img src=../assets/img/Qatar.png class=col-12 col-lg-12 mt-4>"},
 {"pays": "République Centrafiquaine", "image": "<img src=../assets/img/Republique_Centrafriquaine.png class=col-12 col-lg-12 mt-4>"},
-{"pays": "République Démocratique Du Congo", "image": "<img src=../assets/img/Republique_Democratique_Du_Congo.png class=col-12 col-lg-12 mt-4>"},
+{"pays": "République Démocratique du Congo", "image": "<img src=../assets/img/Republique_Democratique_du_Congo.png class=col-12 col-lg-12 mt-4>"},
 {"pays": "République Dominicaine", "image": "<img src=../assets/img/Republique_Dominicaine.png class=col-12 col-lg-12 mt-4>"},
 {"pays": "République du Congo", "image": "<img src=../assets/img/Republique_du_Congo.png class=col-12 col-lg-12 mt-4>"},
 {"pays": "République Tchèque", "image": "<img src=../assets/img/Republique_Tcheque.png class=col-12 col-lg-12 mt-4>"},
@@ -170,7 +170,7 @@ var data = [        //liste de tout les pays
 {"pays": "Slovénie", "image": "<img src=../assets/img/Slovenie.png class=col-12 col-lg-12 mt-4>"},
 {"pays": "Somalie", "image": "<img src=../assets/img/Somalie.png class=col-12 col-lg-12 mt-4>"},
 {"pays": "Soudan", "image": "<img src=../assets/img/Soudan.png class=col-12 col-lg-12 mt-4>"},
-{"pays": "Soudan Du Sud", "image": "<img src=../assets/img/Soudan_Du_Sud.png class=col-12 col-lg-12 mt-4>"},
+{"pays": "Soudan du Sud", "image": "<img src=../assets/img/Soudan_Du_Sud.png class=col-12 col-lg-12 mt-4>"},
 {"pays": "Sri Lanka", "image": "<img src=../assets/img/Sri_Lanka.png class=col-12 col-lg-12 mt-4>"},
 {"pays": "Suède", "image": "<img src=../assets/img/Suede.png class=col-12 col-lg-12 mt-4>"},
 {"pays": "Suisse", "image": "<img src=../assets/img/Suisse.png class=col-12 col-lg-12 mt-4>"},
@@ -205,12 +205,12 @@ en.style.display = "none";
 function language() {
 var fr = document.getElementById("fr");
 
-    if (fr.style.display === "none") {
-      fr.style.display = "block";
-      en.style.display = "none";
-    } 
-    else {
-      fr.style.display = "none";
-      en.style.display = "block";
-    }
+  if (fr.style.display === "none") {
+    fr.style.display = "block";
+    en.style.display = "none";
+  } 
+  else {
+    fr.style.display = "none";
+    en.style.display = "block";
+  }
 }

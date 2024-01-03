@@ -2,9 +2,9 @@ let Pays;
 let Reponse;
 var data = [        //liste de tout les pays
 {"pays": "Afghanistan", "image": "<img src=../assets/img/Afghanistan.png class=col-12 col-lg-12 mt-4>"},
-{"pays": "Afrique Du Sud", "image": "<img src=../assets/img/Afrique_Du_Sud.png class=col-12 col-lg-12 mt-4>"},
+{"pays": "Afrique du Sud", "image": "<img src=../assets/img/Afrique_Du_Sud.png class=col-12 col-lg-12 mt-4>"},
 {"pays": "Albanie", "image": "<img src=../assets/img/Albanie.png class=col-12 col-lg-12 mt-4>"},
-{"pays": "Algerie", "image": "<img src=../assets/img/Algerie.png class=col-12 col-lg-12 mt-4>"},
+{"pays": "Algérie", "image": "<img src=../assets/img/Algerie.png class=col-12 col-lg-12 mt-4>"},
 {"pays": "Allemagne", "image": "<img src=../assets/img/Allemagne.png class=col-12 col-lg-12 mt-4>"},
 {"pays": "Andorre", "image": "<img src=../assets/img/Andorre.png class=col-12 col-lg-12 mt-4>"},
 {"pays": "Angola", "image": "<img src=../assets/img/Angola.png class=col-12 col-lg-12 mt-4>"},
@@ -41,8 +41,8 @@ var data = [        //liste de tout les pays
 {"pays": "Chypre", "image": "<img src=../assets/img/Chypre.png class=col-12 col-lg-12 mt-4>"},
 {"pays": "Colombie", "image": "<img src=../assets/img/Colombie.png class=col-12 col-lg-12 mt-4>"},
 {"pays": "Comores", "image": "<img src=../assets/img/Comores.png class=col-12 col-lg-12 mt-4>"},
-{"pays": "Corée Du Nord", "image": "<img src=../assets/img/Coree_Du_Nord.png class=col-12 col-lg-12 mt-4>"},
-{"pays": "Corée Du Sud", "image": "<img src=../assets/img/Coree_Du_Sud.png class=col-12 col-lg-12 mt-4>"},
+{"pays": "Corée du Nord", "image": "<img src=../assets/img/Coree_Du_Nord.png class=col-12 col-lg-12 mt-4>"},
+{"pays": "Corée du Sud", "image": "<img src=../assets/img/Coree_Du_Sud.png class=col-12 col-lg-12 mt-4>"},
 {"pays": "Costa Rica", "image": "<img src=../assets/img/Costa_Rica.png class=col-12 col-lg-12 mt-4>"},
 {"pays": "Côte d'Ivoire", "image": "<img src=../assets/img/Cote_d'Ivoire.png class=col-12 col-lg-12 mt-4>"},
 {"pays": "Croatie", "image": "<img src=../assets/img/Croatie.png class=col-12 col-lg-12 mt-4>"},
@@ -104,7 +104,7 @@ var data = [        //liste de tout les pays
 {"pays": "Liechtenstein", "image": "<img src=../assets/img/Liechtenstein.png class=col-12 col-lg-12 mt-4>"},
 {"pays": "Lituanie", "image": "<img src=../assets/img/Lituanie.png class=col-12 col-lg-12 mt-4>"},
 {"pays": "Luxembourg", "image": "<img src=../assets/img/Luxembourg.png class=col-12 col-lg-12 mt-4>"},
-{"pays": "Macédoine Du Nord", "image": "<img src=../assets/img/Macedoine_Du_Nord.png class=col-12 col-lg-12 mt-4>"},
+{"pays": "Macédoine du Nord", "image": "<img src=../assets/img/Macedoine_Du_Nord.png class=col-12 col-lg-12 mt-4>"},
 {"pays": "Madagascar", "image": "<img src=../assets/img/Madagascar.png class=col-12 col-lg-12 mt-4>"},
 {"pays": "Malaisie", "image": "<img src=../assets/img/Malaisie.png class=col-12 col-lg-12 mt-4>"},
 {"pays": "Malawi", "image": "<img src=../assets/img/Malawi.png class=col-12 col-lg-12 mt-4>"},
@@ -146,7 +146,7 @@ var data = [        //liste de tout les pays
 {"pays": "Portugal", "image": "<img src=../assets/img/Portugal.png class=col-12 col-lg-12 mt-4>"},
 {"pays": "Qatar", "image": "<img src=../assets/img/Qatar.png class=col-12 col-lg-12 mt-4>"},
 {"pays": "République Centrafiquaine", "image": "<img src=../assets/img/Republique_Centrafriquaine.png class=col-12 col-lg-12 mt-4>"},
-{"pays": "République Démocratique Du Congo", "image": "<img src=../assets/img/Republique_Democratique_Du_Congo.png class=col-12 col-lg-12 mt-4>"},
+{"pays": "République Démocratique du Congo", "image": "<img src=../assets/img/Republique_Democratique_du_Congo.png class=col-12 col-lg-12 mt-4>"},
 {"pays": "République Dominicaine", "image": "<img src=../assets/img/Republique_Dominicaine.png class=col-12 col-lg-12 mt-4>"},
 {"pays": "République du Congo", "image": "<img src=../assets/img/Republique_du_Congo.png class=col-12 col-lg-12 mt-4>"},
 {"pays": "République Tchèque", "image": "<img src=../assets/img/Republique_Tcheque.png class=col-12 col-lg-12 mt-4>"},
@@ -170,7 +170,7 @@ var data = [        //liste de tout les pays
 {"pays": "Slovénie", "image": "<img src=../assets/img/Slovenie.png class=col-12 col-lg-12 mt-4>"},
 {"pays": "Somalie", "image": "<img src=../assets/img/Somalie.png class=col-12 col-lg-12 mt-4>"},
 {"pays": "Soudan", "image": "<img src=../assets/img/Soudan.png class=col-12 col-lg-12 mt-4>"},
-{"pays": "Soudan Du Sud", "image": "<img src=../assets/img/Soudan_Du_Sud.png class=col-12 col-lg-12 mt-4>"},
+{"pays": "Soudan du Sud", "image": "<img src=../assets/img/Soudan_Du_Sud.png class=col-12 col-lg-12 mt-4>"},
 {"pays": "Sri Lanka", "image": "<img src=../assets/img/Sri_Lanka.png class=col-12 col-lg-12 mt-4>"},
 {"pays": "Suède", "image": "<img src=../assets/img/Suede.png class=col-12 col-lg-12 mt-4>"},
 {"pays": "Suisse", "image": "<img src=../assets/img/Suisse.png class=col-12 col-lg-12 mt-4>"},
@@ -200,6 +200,66 @@ var data = [        //liste de tout les pays
 ]
 
 
+
+
+
+input.onfocus = function () {
+  datalistOptions.style.display = 'block';
+  input.style.borderRadius = "5px 5px 0 0";  
+};
+for (let option of datalistOptions.options) {
+  option.onclick = function () {
+    input.value = option.value;
+    datalistOptions.style.display = 'none';
+    input.style.borderRadius = "5px";
+  }
+};
+
+input.oninput = function() {
+  currentFocus = -1;
+  var text = input.value.toUpperCase();
+  for (let option of datalistOptions.options) {
+    if(option.value.toUpperCase().indexOf(text) > -1){
+      option.style.display = "block";
+  }else{
+    option.style.display = "none";
+    }
+  };
+}
+var currentFocus = -1;
+input.onkeydown = function(e) {
+  if(e.keyCode == 40){
+    currentFocus++
+   addActive(datalistOptions.options);
+  }
+  else if(e.keyCode == 38){
+    currentFocus--
+   addActive(datalistOptions.options);
+  }
+  else if(e.keyCode == 13){
+    e.preventDefault();
+        if (currentFocus > -1) {
+          /*and simulate a click on the "active" item:*/
+          if (datalistOptions.options) datalistOptions.options[currentFocus].click();
+        }
+  }
+}
+
+function addActive(x) {
+    if (!x) return false;
+    removeActive(x);
+    if (currentFocus >= x.length) currentFocus = 0;
+    if (currentFocus < 0) currentFocus = (x.length - 1);
+    x[currentFocus].classList.add("active");
+  }
+  function removeActive(x) {
+    for (var i = 0; i < x.length; i++) {
+      x[i].classList.remove("active");
+    }
+  }
+
+
+
 random = Math.floor(Math.random() * data.length)                     //Séléction de manière aléatoire du pays/ de l'image
 Pays = data[random].pays                                             //Et stockage dans la variable pays
 document.querySelector(".random").innerHTML = data[random].image     //Grâce a la délimitation établie avec les virgules
@@ -207,7 +267,7 @@ document.querySelector(".random").innerHTML = data[random].image     //Grâce a 
 btn = document.querySelector(".popup")                               //Quand on appuie sur le bouton avec la class popup
 btn.addEventListener("click", reponse);                              //
 
-send = document.getElementById("send").onkeydown = function(e) {    //Fonction pour envoyer la réponse avec la touche entrée
+oui = document.getElementById("input").onkeydown = function(e) {    //Fonction pour envoyer la réponse avec la touche entrée
   if (e.code == "Enter") {                                          //
     reponse()                                                       //
   }                                                                 //
@@ -219,11 +279,11 @@ function reponse() {                                                          //
   reponse = document.querySelector("input").value                             //
   if (reponse.toLowerCase() == Pays.toLowerCase()) {                          //
     document.querySelector(".popuptext").style.backgroundColor = "#1ab315"    //
-    document.getElementById("send").disabled = true;                          //
+    document.getElementById("input").disabled = true;                          //
    }                                                                          //
   else {                                                                      //
     document.querySelector(".popuptext").style.backgroundColor = "red"        //
-    document.getElementById("send").disabled = true;                          //
+    document.getElementById("input").disabled = true;                          //
   }                                                                           //
 };                                                                            //
 
