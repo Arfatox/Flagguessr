@@ -21,7 +21,7 @@
   <button type="button" class="buttonnavbar2" onclick="window.location.href ='Europe.html';">Europe</button>
   <button type="button" class="buttonnavbar2" onclick="window.location.href ='Afrique.html';">Afrique</button>
   <button type="button" class="buttonnavbar1" onclick="window.location.href ='Me_contacter.html';">Me Contacter</button>
-  <button type="button" class="buttonnavbar1" onclick="window.location.href ='About_me.html';">À Propos</button>
+  <button type="button" class="buttonnavbar1" onclick="window.location.href ='About.html';">À Propos</button>
   <button type="button" class="buttonnavbar3" onclick="window.location.href ='Europe_white.html';">Thème Clair</button>
 </nav>
 
@@ -29,66 +29,64 @@
   <div class="random">
 
   </div>
-  <div class="div1">
-    <input type="text" class="form-control" list="datalistOptions" id="send" placeholder="Entrez un pays">
-    <button class="popup" onclick="popup()" data-bs-toggle="popover" data-bs-title="Popover title" data-bs-content="yo">
-      Envoyer
-      <span class="popuptext" id="myPopup"><span id="nomPays"></span></span> <!-- le premier span sert à afficher le popup et le 2ème sert a afficher le pays dedans-->
-    </button>
-  <datalist id="datalistOptions">
-    <option value="Albanie">
-    <option value="Allemagne">
-    <option value="Andorre">
-    <option value="Angleterre">
-    <option value="Autriche">
-    <option value="Belgique">
-    <option value="Biélorussie">
-    <option value="Bosnie-Herzégovine">
-    <option value="Bulgarie">
-    <option value="Chypre">
-    <option value="Croatie">
-    <option value="Danemark">
-    <option value="Espagne">
-    <option value="Estonie">
-    <option value="Finlande">
-    <option value="France">
-    <option value="Grèce">
-    <option value="Hongrie">
-    <option value="Irlande">
-    <option value="Islande">
-    <option value="Italie">
-    <option value="Kazakhstan">
-    <option value="Lettonie">
-    <option value="Liechtenstein">
-    <option value="Lituanie">
-    <option value="Luxembourg">
-    <option value="Macédoine Du Nord">
-    <option value="Malte">
-    <option value="Moldavie">
-    <option value="Monaco">
-    <option value="Monténégro">
-    <option value="Norvège">
-    <option value="Pays-Bas">
-    <option value="Pologne">
-    <option value="Portugal">
-    <option value="République Tchèque">
-    <option value="Roumanie">
-    <option value="Royaume-Uni">
-    <option value="Russie">
-    <option value="Saint-Marin">
-    <option value="Serbie">
-    <option value="Slovaquie">
-    <option value="Slovénie">
-    <option value="Suède">
-    <option value="Suisse">
-    <option value="Tunisie">
-    <option value="Turquie">
-    <option value="Ukraine">
-    <option value="Vatican">
+
+  <div class="divyes">
+    <input autocomplete="off" role="combobox" list="" id="input" placeholder="Entrez un pays">
+    <button class="popup" onclick="popup()" data-bs-toggle="popover" data-bs-title="Popover title">Envoyer<span class="popuptext" id="myPopup"><span id="nomPays"></span></span> <!-- le premier span sert à afficher le popup et le 2ème sert a afficher le pays dedans-->    </button>
+
+  <datalist id="datalistOptions" role="listbox">
+    <option value="Albanie">Albanie</option>
+    <option value="Allemagne">Allemagne</option>
+    <option value="Andorre">Andorre</option>
+    <option value="Angleterre">Angleterre</option>
+    <option value="Autriche">Autriche</option>
+    <option value="Belgique">Belgique</option>
+    <option value="Biélorussie">Biélorussie</option>
+    <option value="Bosnie-Herzégovine">Bosnie-Herzégovine</option>
+    <option value="Bulgarie">Bulgarie</option>
+    <option value="Chypre">Chypre</option>
+    <option value="Croatie">Croatie</option>
+    <option value="Danemark">Danemark</option>
+    <option value="Espagne">Espagne</option>
+    <option value="Estonie">Estonie</option>
+    <option value="Finlande">Finlande</option>
+    <option value="France">France</option>
+    <option value="Grèce">Grèce</option>
+    <option value="Hongrie">Hongrie</option>
+    <option value="Irlande">Irlande</option>
+    <option value="Islande">Islande</option>
+    <option value="Italie">Italie</option>
+    <option value="Kazakhstan">Kazakhstan</option>
+    <option value="Lettonie">Lettonie</option>
+    <option value="Liechtenstein">Liechtenstein</option>
+    <option value="Lituanie">Lituanie</option>
+    <option value="Luxembourg">Luxembourg</option>
+    <option value="Macédoine du Nord">Macédoine du Nord</option>
+    <option value="Malte">Malte</option>
+    <option value="Moldavie">Moldavie</option>
+    <option value="Monaco">Monaco</option>
+    <option value="Monténégro">Monténégro</option>
+    <option value="Norvège">Norvège</option>
+    <option value="Pays-Bas">Pays-Bas</option>
+    <option value="Pologne">Pologne</option>
+    <option value="Portugal">Portugal</option>
+    <option value="République Tchèque">République Tchèque</option>
+    <option value="Roumanie">Roumanie</option>
+    <option value="Royaume-Uni">Royaume-Uni</option>
+    <option value="Russie">Russie</option>
+    <option value="Saint-Marin">Saint-Marin</option>
+    <option value="Serbie">Serbie</option>
+    <option value="Slovaquie">Slovaquie</option>
+    <option value="Slovénie">Slovénie</option>
+    <option value="Suède">Suède</option>
+    <option value="Suisse">Suisse</option>
+    <option value="Tunisie">Tunisie</option>
+    <option value="Turquie">Turquie</option>
+    <option value="Ukraine">Ukraine</option>
+    <option value="Vatican">Vatican</option>
     </datalist>
-</div>
+  </div>
     <button class="button" id="refresh" onclick="document.location.reload(false)"> Actualiser </button>
-    <div class="divdubas"></div>
     <script src="../javascripts/Europe.js"></script>
   </body>
 
