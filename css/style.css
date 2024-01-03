@@ -21,9 +21,9 @@ html, body {
 }
 
 h1{
-  font-family: 'Lucida Console';
-  margin-bottom: 1.5rem;
-  margin-top: 0.5rem;
+  font-family: 'Arial';
+  margin-bottom: 1.2rem;
+  margin-top: 0.3rem;
   margin-left: 1rem;
 }
 
@@ -313,8 +313,6 @@ h1{
 /* Toggle this class - hide and show the popup */
 .popup .show {
   visibility: visible;
-  -webkit-animation: fadeIn 1s;
-  animation: fadeIn 1s;
 }
 
 h2{
@@ -341,6 +339,62 @@ h5{
   justify-self: right;
 }
 
+input {
+  font-size: 1rem;
+  padding: 5px;
+  height: 35px;
+  width: 40vw;
+  border: 1px solid #001c31;
+  outline: none;
+  border-radius: 5px;
+  color: #001c31;
+  background-color: #d0cde6;
+/*   border-bottom: none; */
+}
+input:disabled {
+  color: #001c31;
+  background-color: #858394;
+}
+
+datalist {
+  position:fixed;
+  left: 60vw;
+  background-color: #080202;
+  border: 1px solid #001c31;
+  border-radius: 5px 5px 5px 5px;
+  border-top: none;
+  font-family: sans-serif;
+  width: auto;
+  min-width: 120px;
+  padding: 5px;
+  max-height: 7.9rem;
+  overflow-y: auto;
+  word-break: normal;
+}
+@media (orientation: portrait) {
+  datalist {
+    left: 18vw;
+  }
+  #refresh {
+    margin-top: 10rem;
+  }
+}
+
+option {
+  background-color: #080202;
+  padding: 4px;
+  color: #d0cde6;
+  margin-bottom: 1px;
+  font-size: 0.9rem;
+  cursor: pointer;
+}
+
+option:hover,  .active{
+  background-color: #151c25;
+}
+
+
+
 @media (max-width:1000px) { 
   .imgindex1{
     width:90%;
@@ -351,38 +405,23 @@ h5{
   }
 }
 
-.div1{
-  left:0;
-  right:0;
-  margin-left: auto;
-  margin-right: auto;
-  display:flex; 
-  width:50%;
-  margin-top: 1.3em;
-}
-
-.footer{
-  position: fixed;
-  left: 0;
-  bottom: 0;
-  width: 100%;
-  background-color: #071E3D;
-  color: white;
+.divyes{
   text-align: center;
-  min-height:50px;  
-  font-size:16px;
+  margin-top: 1.3rem;
+} 
+
+/* Fonctionne sur Firefox */
+* {
+  scrollbar-width: auto;
+  scrollbar-color: #d0cde6 #001c31;
 }
 
-.divfooter1{
-  float:left;
-  width:45%;
-  text-align:center;
-  word-wrap: break-word;
+/* Fonctionne sur Chrome, Edge, et Safari */
+*::-webkit-scrollbar {
+  background-color: #001c31;
+  width: 10px;
 }
 
-.divfooter2{
-  float:right;
-  width:45%;
-  text-align:center;
-  word-wrap: break-word;
+*::-webkit-scrollbar-thumb {
+  background: #d0cde6;
 }
