@@ -6,32 +6,31 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet"
     integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
-  <link rel="stylesheet" href="../css/style.css">
+  <link rel="stylesheet" href="../css/style_white.css">
   <link rel="shortcut icon" href="../favicon.ico">
   <title>FlagGuessr</title>
 </head>
 
 <body class="body">
 
-  <nav class="navbar sticky-top">
-  
-    <p class="titre">FlagGuessr</p>
-  <a class="buttonnavbar1" onclick="window.location.href ='../index.html';">Accueil</a>
-  <a class="buttonnavbar2" onclick="window.location.href ='World.html';">Monde</a>
-  <a class="buttonnavbar2" onclick="window.location.href ='Europe.html';">Europe</a>
-  <a class="buttonnavbar2" onclick="window.location.href ='Afrique.html';">Afrique</a>
-  <a class="buttonnavbar2" onclick="window.location.href ='Streak.html';">Mode Série</a>
-  <a class="buttonnavbar1" onclick="window.location.href ='About.html';">À Propos</a>
-  <a class="buttonnavbar3" onclick="window.location.href ='Europe_white.html';">Thème Clair</a>
-  <a class="ennav" onclick="window.location.href ='Europe_en.html';"></a>
-    
-</nav>
+<nav class="navbar sticky-top">
+
+  <p class="titre">FlagGuessr</p>
+  <a class="buttonnavbar1" onclick="window.location.href ='../index_white_en.html';">Home</a>
+  <a class="buttonnavbar2" onclick="window.location.href ='World_white_en.html';">World</a>
+  <a class="buttonnavbar2" onclick="window.location.href ='Europe_white_en.html';">Europe</a>
+  <a class="buttonnavbar2" onclick="window.location.href ='Afrique_white_en.html';">Africa</a>
+  <a class="buttonnavbar2" onclick="window.location.href ='Streak_white_en.html';">Streak Mode</a> 
+  <a class="buttonnavbar1" onclick="window.location.href ='About_white_en.html';">About</a>
+  <a class="buttonnavbar3" onclick="window.location.href ='Europe_en.html';">Dark Theme</a>
+    <a class="ennav" onclick="window.location.href ='Europe_white.html';" style="background-image: url('../assets/fr.png');"></a>
+  </nav>
 
   <h1> Quel est ce Pays d'Europe ?</h1>
   <div class="random">
 
   </div>
-
+  
   <div class="divyes">
     <input autocomplete="off" role="combobox" list="" id="input" placeholder="Entrez un pays">
     <button class="popup" onclick="popup()" data-bs-toggle="popover" data-bs-title="Popover title">Envoyer<span class="popuptext" id="myPopup"><span id="nomPays"></span></span> <!-- le premier span sert à afficher le popup et le 2ème sert a afficher le pays dedans-->    </button>
@@ -89,7 +88,7 @@
     </datalist>
   </div>
     <button class="button" id="refresh" onclick="document.location.reload(false)"> Actualiser </button>
-    <script src="../javascripts/Europe.js"></script>
+    <script src="../javascripts/Europe_en.js"></script>
   </body>
 
 </html>

@@ -23,8 +23,8 @@
   <a class="buttonnavbar2" onclick="window.location.href ='Afrique.html';">Afrique</a>
   <a class="buttonnavbar2" onclick="window.location.href ='Streak.html';">Mode Série</a>
   <a class="buttonnavbar1" onclick="window.location.href ='About.html';">À Propos</a>
-  <a class="buttonnavbar3" onclick="window.location.href ='World_white.html';">Thème Clair</a>
-  <a class="ennav" onclick="window.location.href ='World_en.html';"></a>
+  <a class="buttonnavbar3" onclick="window.location.href ='Streak_white.html';">Thème Clair</a>
+  <a class="ennav" onclick="window.location.href ='Streak_en.html';"></a>
 </nav>
 
   <h1> Quel est ce Pays ?</h1>
@@ -34,6 +34,12 @@
   <div class="divyes">
     <input autocomplete="off" role="combobox" list="" id="input" placeholder="Entrez un pays">
     <button class="popup" onclick="popup()" data-bs-toggle="popover" data-bs-title="Popover title">Envoyer<span class="popuptext" id="myPopup"><span id="nomPays"></span></span> <!-- le premier span sert à afficher le popup et le 2ème sert a afficher le pays dedans-->    </button>
+
+    <div id="divnewflag">
+      <button class="button" id="btnnewflag" onclick="reload()">Nouveau drapeau</button>
+    </div> <br>
+    
+      <p class="pstreak"><span id="afficher">0</span></p>
 
   <datalist id="datalistOptions" role="listbox">
       <option value="Afghanistan">Afghanistan</option>
@@ -82,6 +88,7 @@
       <option value="Comores">Comores</option>
       <option value="Corée du Nord">Corée du Nord</option>
       <option value="Corée du Sud">Corée du Sud</option>
+      <option value="Costa Rica">Costa Rica</option>
       <option value="Côte d'Ivoire">Côte d'Ivoire</option>
       <option value="Croatie">Croatie</option>
       <option value="Cuba">Cuba</option>
@@ -239,7 +246,7 @@
   </datalist>
   </div>
   <button class="button" id="refresh" onclick="document.location.reload(false)"> Actualiser </button>
-  <script src="../javascripts/World.js"></script>
+  <script src="../javascripts/Streak.js"></script>
 </body>
 
 </html>
