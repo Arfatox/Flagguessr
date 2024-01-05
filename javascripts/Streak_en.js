@@ -221,8 +221,9 @@ input.oninput = function() {
   for (let option of datalistOptions.options) {
     if(option.value.toUpperCase().indexOf(text) > -1){
       option.style.display = "block";
-  }else{
-    option.style.display = "none";
+    }
+    else{
+      option.style.display = "none";
     }
   };
 }
@@ -269,12 +270,30 @@ document.querySelector(".random").innerHTML = data[random].image     //Grâce a 
 btn = document.querySelector(".popup")                               //Quand on appuie sur le bouton avec la class popup
 btn.addEventListener("click", reponse);                              //
 
-oui = document.getElementById("input").onkeydown = function(e) {    //Fonction pour envoyer la réponse avec la touche entrée
-  if (e.code == "Enter") {                                          //
-    reponse()
-    popup()                                                       //
-  }                                                                 //
-};                                                                  //
+entrer = document.getElementById("input").onkeydown = function(e) {    
+  if (e.code == "Enter") {
+    popup()
+  }
+};
+
+
+document.addEventListener('keydown', function(event) {
+  if (event.code == 'Enter') {
+    console.log("ok")                                                           //le popup avec fond vert si bon rouge sinon
+    reponse = document.querySelector("input").value                             //
+    if (reponse.toLowerCase() == Pays.toLowerCase()) {                          //
+      document.querySelector(".popuptext").style.backgroundColor = "#1ab315"    //
+      document.getElementById("input").disabled = true; 
+      btnnewflag = document.getElementById("divnewflag")
+      btnnewflag.style.display  = 'inline-flex';
+    }                                                                           //
+    else {                                                                      //
+      document.querySelector(".popuptext").style.backgroundColor = "red"        //
+      document.getElementById("input").disabled = true;                         //
+    }  
+  }
+});
+
 
 
 function reponse() {                                                          //Fonction qui vérifie la réponse et l'affiche sur 
@@ -282,13 +301,40 @@ function reponse() {                                                          //
   reponse = document.querySelector("input").value                             //
   if (reponse.toLowerCase() == Pays.toLowerCase()) {                          //
     document.querySelector(".popuptext").style.backgroundColor = "#1ab315"    //
-    document.getElementById("input").disabled = true;                          //
-   }                                                                          //
+    document.getElementById("input").disabled = true; 
+    btnnewflag = document.getElementById("divnewflag")
+    btnnewflag.style.display  = 'inline-flex';
+  }                                                                           //
   else {                                                                      //
     document.querySelector(".popuptext").style.backgroundColor = "red"        //
-    document.getElementById("input").disabled = true;                          //
+    document.getElementById("input").disabled = true;                         //
   }                                                                           //
 };                                                                            //
+
+
+
+var streak = 0;
+
+function reload(){
+  if (document.getElementById("input").value != ""){
+    var popup = document.getElementById("myPopup");
+    popup.classList.toggle("show");
+  }
+  reponse = document.querySelector("input").value 
+  if (reponse.toLowerCase() == Pays.toLowerCase()) {
+    document.getElementById("input").disabled = false;
+    document.getElementById("input").value = "";
+    datalistOptions.style.display = 'none';
+    streak++;
+    document.getElementById("afficher").textContent = streak;
+  } 
+  random = Math.floor(Math.random() * data.length)  
+  Pays = data[random].pays
+  document.querySelector(".random").innerHTML = data[random].image
+  btnnewflag.style.display  = 'none';
+}
+
+
 
 
 function popup() {                                                            //Fonction qui affiche le popup
