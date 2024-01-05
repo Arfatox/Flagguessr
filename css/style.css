@@ -27,10 +27,6 @@ h1{
   margin-left: 1rem;
 }
 
-.label{
-  font-family: 'Lucida Console';
-}
-
 .random img {
   width: auto;
   max-height: 56vh;
@@ -175,51 +171,36 @@ h1{
 }
 
 .navbar{
-  display: block;
-  text-align: center;
+  display: flexbox;
+  justify-content: center;
   background-color: #001c31;
   padding:0px;
-}
-
-.divlogo{
-  display: inline;
-  float: left;
-  margin: auto;
-  width: 60px;
-  height: 57px;
-  pointer-events: none; 
-}
-
-.logo{
-  width: 57px;
-  height: 57px; 
+  height: 55px;
 }
 
 .titre{
   font-family: 'Lucida Console';
   color:#ffffff;
   position: absolute;
-  left :60px;
+  left :12px;
   top:7px;
   font-size: 40px;
   margin-top: -8px;
 }
 
-@media (max-width:1350px) { 
-.titre{
-    display:none;
-  }
-}
-
 .buttonnavbar1{
+  cursor: pointer;
+  text-decoration: none;
+  display: inline;
   background-color: #4d95a4;
   border-radius: 7px;
   border: 2px solid #4d95a4;
   color: #ffffff ;
   height: 37px;
-  margin-top:12px;
-  margin-left:2.5px;
-  margin-right:2.5px;
+  padding: 5px;
+  padding-top: 4px;
+  margin-left:0.3rem;
+  margin-right:0.3rem;
   transition-duration: 0.5s;
   font-weight: bold;
 }
@@ -229,14 +210,18 @@ h1{
 }
 
 .buttonnavbar2{
+  cursor: pointer;
+  text-decoration: none;
+  display: inline;
   background-color: #4083b6;
   border-radius: 7px;
   border: 2px solid #4083b6;
   color: #ffffff ;
   height: 37px;
-  margin-top:12px;
-  margin-left:2.5px;
-  margin-right:2.5px;
+  padding: 5px;
+  padding-top: 4px;
+  margin-left:0.3rem;
+  margin-right:0.3rem;
   transition-duration: 0.5s;
   font-weight: bold;
 }
@@ -246,15 +231,18 @@ h1{
 }
 
 .buttonnavbar3{
+  cursor: pointer;
+  text-decoration: none;
+  display: inline;
   background-color: #531a94;
   border-radius: 7px;
   border: 2px solid #531a94;
   color: #ffffff ;
   height: 37px;
-  margin-top:12px;
-  margin-left:2.5px;
-  margin-right:2.5px;
-  margin-bottom: 8px;
+  padding: 5px;
+  padding-top: 4px;
+  margin-left:0.3rem;
+  margin-right:0.3rem;
   transition-duration: 0.5s;
   font-weight: bold;
 }
@@ -264,17 +252,36 @@ h1{
 }
 
 .ennav{
-  margin-top: -4px;
-  margin-left: 20px;
-  height: 32px;
-  border-radius: 2px;
-}
-.ennav:hover{
+  background-image: url("../assets/en.png");
+  background-repeat: round;
+  text-decoration: none;
+  display: inline;
   cursor: pointer;
+  border-radius: 7px;
+  height: 37px;
+  width: 75px;
+  padding-top: 4px;
+  margin-left:1.5rem;
+  margin-right:0.3rem;
+}
+@media (max-width:1250px) { 
+  .titre {
+      display:none;
+    }
+  }
+@media (max-width:723.5px) { 
+  .navbar {
+    height: 110px;
+  }
+}
+@media (max-width:415.5px) { 
+  .navbar {
+    height: 165px;
+  }
 }
 
 #refresh{
-  margin-top:3.6em;
+  margin-top:1.3vh;
 }
 
 .popup {
@@ -324,6 +331,26 @@ h5{
   margin-right: 2.5rem;
 }
 
+#divnewflag{
+  display: none;
+  height: min-content;
+  width: auto;
+}
+
+#btnnewflag{
+  display: inline-flex;
+  height: auto;
+  margin-left: 2vw;
+  margin-top: 0;
+  width: auto;
+}
+
+.pstreak{
+  display:inline-block;
+  font-family: 'Lucida Console';
+  font-size: 2rem;
+}
+
 .divimgindex{
   display:inline;
 }
@@ -357,8 +384,9 @@ input:disabled {
 }
 
 datalist {
-  position:fixed;
-  left: 60vw;
+  position:absolute;
+  left: 55vw;
+  top: 2.3rem;
   background-color: #080202;
   border: 1px solid #001c31;
   border-radius: 5px 5px 5px 5px;
@@ -366,6 +394,7 @@ datalist {
   font-family: sans-serif;
   width: auto;
   min-width: 120px;
+  max-width: 300px;
   padding: 5px;
   max-height: 7.9rem;
   overflow-y: auto;
@@ -373,10 +402,13 @@ datalist {
 }
 @media (orientation: portrait) {
   datalist {
-    left: 18vw;
+    position: absolute;
+    left: 19vw;
+    max-height: 6rem;
+    max-width: max-content;
   }
   #refresh {
-    margin-top: 10rem;
+    margin-top: 2rem;
   }
 }
 
@@ -393,8 +425,6 @@ option:hover,  .active{
   background-color: #151c25;
 }
 
-
-
 @media (max-width:1000px) { 
   .imgindex1{
     width:90%;
@@ -406,6 +436,7 @@ option:hover,  .active{
 }
 
 .divyes{
+  position: relative;
   text-align: center;
   margin-top: 1.3rem;
 } 
