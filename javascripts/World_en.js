@@ -261,7 +261,6 @@ function addActive(x) {
 
 
 
-
 random = Math.floor(Math.random() * data.length)                     //Séléction de manière aléatoire du pays/ de l'image
 Pays = data[random].pays                                             //Et stockage dans la variable pays
 document.querySelector(".random").innerHTML = data[random].image     //Grâce a la délimitation établie avec les virgules
@@ -289,6 +288,21 @@ function reponse() {                                                          //
     document.getElementById("input").disabled = true;                          //
   }                                                                           //
 };                                                                            //
+
+
+input.onblur = function () {
+  datalistOptions.style.display = 'none';
+  input.style.borderRadius = "5px";
+};
+
+for (let option of datalistOptions.options) {
+  option.onmousedown = function (e) {
+    e.preventDefault();  // Empêche le focus de passer à l'option
+    input.value = option.value;
+    datalistOptions.style.display = 'none';
+    input.style.borderRadius = "5px";
+  }
+};
 
 
 function popup() {                                                            //Fonction qui affiche le popup

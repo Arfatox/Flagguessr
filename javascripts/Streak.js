@@ -259,6 +259,14 @@ function addActive(x) {
     }
   }
 
+  function resetDatalist() {
+    for (let option of datalistOptions.options) {
+      option.style.display = "block";
+    }
+    currentFocus = -1;
+    removeActive(datalistOptions.options);
+  }
+
 
 
 
@@ -312,6 +320,19 @@ function reponse() {                                                          //
 };                                                                            //
 
 
+input.onblur = function () {
+  datalistOptions.style.display = 'none';
+  input.style.borderRadius = "5px";
+};
+
+for (let option of datalistOptions.options) {
+  option.onmousedown = function (e) {
+    e.preventDefault();  // Empêche le focus de passer à l'option
+    input.value = option.value;
+    datalistOptions.style.display = 'none';
+    input.style.borderRadius = "5px";
+  }
+};
 
 var streak = 0;
 
@@ -327,6 +348,7 @@ function reload(){
     datalistOptions.style.display = 'none';
     streak++;
     document.getElementById("afficher").textContent = streak;
+    resetDatalist();
   } 
   random = Math.floor(Math.random() * data.length)  
   Pays = data[random].pays

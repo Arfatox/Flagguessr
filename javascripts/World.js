@@ -291,6 +291,21 @@ function reponse() {                                                          //
 };                                                                            //
 
 
+input.onblur = function () {
+  datalistOptions.style.display = 'none';
+  input.style.borderRadius = "5px";
+};
+
+for (let option of datalistOptions.options) {
+  option.onmousedown = function (e) {
+    e.preventDefault();  // Empêche le focus de passer à l'option
+    input.value = option.value;
+    datalistOptions.style.display = 'none';
+    input.style.borderRadius = "5px";
+  }
+};
+
+
 function popup() {                                                            //Fonction qui affiche le popup
   var popup = document.getElementById("myPopup");                             //
   popup.classList.toggle("show");                                             //
