@@ -6,12 +6,12 @@
   height: 55px;
 }
 
-@media (max-width:68.5px) { 
+@media (max-width:683.5px) { 
   .navbar {
     height: 110px;
   }
 }
-@media (max-width:39.5px) { 
+@media (max-width:398.5px) { 
   .navbar {
     height: 165px;
   }
