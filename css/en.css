@@ -3,15 +3,15 @@
 }
 
 .navbar {
-    height: 55px;
+  height: 55px;
 }
 
-@media (max-width:693.5px) { 
+@media (max-width:683.5px) { 
   .navbar {
     height: 110px;
   }
 }
-@media (max-width:402.5px) { 
+@media (max-width:398.5px) { 
   .navbar {
     height: 165px;
   }
