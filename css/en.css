@@ -1,0 +1,18 @@
+.ennav{
+  background-image: url('../assets/fr.png');
+}
+
+.navbar {
+    height: 55px;
+}
+
+@media (max-width:693.5px) { 
+  .navbar {
+    height: 110px;
+  }
+}
+@media (max-width:402.5px) { 
+  .navbar {
+    height: 165px;
+  }
+}

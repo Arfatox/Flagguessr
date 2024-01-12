@@ -270,7 +270,21 @@ h1{
   width: 75px;
   padding-top: 4px;
   margin-left:1.5rem;
-  margin-right:0.3rem;
+}
+@media (max-width:1250px) { 
+  .titre {
+      display:none;
+    }
+  }
+@media (max-width:723.5px) { 
+  .navbar {
+    height: 110px;
+  }
+}
+@media (max-width:415.5px) { 
+  .navbar {
+    height: 165px;
+  }
 }
 
 #refresh{
