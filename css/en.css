@@ -11,7 +11,7 @@
     height: 110px;
   }
 }
-@media (max-width:398.5px) { 
+@media (max-width:398.01px) { 
   .navbar {
     height: 165px;
   }
