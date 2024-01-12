@@ -11,13 +11,11 @@
     height: 110px;
   }
 }
-@media (max-width:397.5px) { 
+@media (max-width:398.5px) { 
   .navbar {
     height: 165px;
   }
-}
-@media (max-width:395.5px) { 
-  .navbar {
-    background-color: aquamarine;
+  .ennav{
+    margin-left:2rem;
   }
 }
