@@ -6,16 +6,17 @@
   height: 55px;
 }
 
-@media (max-width:683.5px) { 
+.buttonnavbar1 {
+  margin-left:0.6rem;
+}
+
+@media (max-width:692.5px) { 
   .navbar {
     height: 110px;
   }
 }
-@media (max-width:398.5px) { 
+@media (max-width:403.5px) { 
   .navbar {
     height: 165px;
-  }
-  .ennav{
-    margin-left:2rem;
   }
 }
