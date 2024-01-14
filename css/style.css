@@ -170,7 +170,7 @@ h1{
   justify-content: center;
   background-color: #001c31;
   padding:0px;
-  height: 55px;
+  height: auto;
 }
 
 .titre{
@@ -198,6 +198,8 @@ h1{
   margin-right:0.3rem;
   transition-duration: 0.5s;
   font-weight: bold;
+  margin-top: 0.5rem;
+  margin-bottom: 0.5rem;
 }
 .buttonnavbar1:hover{
   background-color: #59b9cd;
@@ -219,6 +221,8 @@ h1{
   margin-right:0.3rem;
   transition-duration: 0.5s;
   font-weight: bold;
+  margin-top: 0.5rem;
+  margin-bottom: 0.5rem;
 }
 .buttonnavbar2:hover{
   background-color: #4ea1e1;
@@ -240,6 +244,8 @@ h1{
   margin-right:0.3rem;
   transition-duration: 0.5s;
   font-weight: bold;
+  margin-top: 0.5rem;
+  margin-bottom: 0.5rem;
 }
 .buttonnavbar3:hover{
   background-color: #a265e8;
@@ -257,20 +263,12 @@ h1{
   width: 75px;
   padding-top: 4px;
   margin-left:1.5rem;
+  margin-top: 0.5rem;
+  margin-bottom: 0.5rem;
 }
 @media (max-width:1250px) { 
   .titre {
-      display:none;
-    }
-  }
-@media (max-width:724.5px) { 
-  .navbar {
-    height: 110px;
-  }
-}
-@media (max-width:412.5px) { 
-  .navbar {
-    height: 165px;
+    display:none;
   }
 }
 
