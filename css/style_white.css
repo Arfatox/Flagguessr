@@ -1,6 +1,4 @@
 html, body {
-  height: 100vh;
-  width: 100vw;
   background-color: #d0cde6;
 }
 
@@ -359,27 +357,28 @@ h5{
 }
 
 .divimgindex{
-  display:inline;
+  height: auto;
+  display:flex;
+  justify-content: space-evenly;
 }
 
 .imgindex1{
   width:45%;
-  justify-self: left;
-  margin-left: 5%;
 }
 
 .imgindex2{
   width:45%;
-  justify-self: right;
 }
 
-@media (max-width:1000px) { 
+@media (max-width:1000px) {
+  .divimgindex{
+    display: block;
+  } 
   .imgindex1{
-    width:90%;
+    width:80vw;
   }
   .imgindex2{
-    width:90%;
-    margin-left: 5%;
+    width:80vw;
   }
 }
 
@@ -460,16 +459,17 @@ option:hover,  .active{
 
 /* Fonctionne sur Firefox */
 * {
-  scrollbar-width: auto;
-  scrollbar-color: #d0cde6 #001c31;
+  scrollbar-width: 5px;
+  scrollbar-color: #001c31 #817f94;
 }
 
 /* Fonctionne sur Chrome, Edge, et Safari */
 *::-webkit-scrollbar {
-  background-color: #001c31;
-  width: 10px;
+  background-color: #817f94;
+  width: 5px;
 }
 
 *::-webkit-scrollbar-thumb {
-  background: #d0cde6;
+  background: #001c31;
+  border-radius: 3px;
 }

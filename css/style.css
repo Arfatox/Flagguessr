@@ -1,18 +1,15 @@
 html, body {
-  height: 100vh;
-  width: 100vw;
   background-color: #0d1117;
 }
 
 .body{
   background-color: #0d1117;
   color:#ffffff;
-  max-width: 100vw;
 }
 
 @font-face {
   font-family: 'Lucida Console';
-  src: url('./Lucida_Console_Regular.ttf');
+  src: url('../Lucida_Console_Regular.ttf');
 }
 
 h1{
@@ -344,22 +341,21 @@ h5{
 }
 
 .divimgindex{
-  display:inline;
+  height: auto;
+  display:flex;
+  justify-content: space-evenly;
 }
 
 .imgindex1{
   width:45%;
-  justify-self: left;
-  margin-left: 5%;
 }
 
 .imgindex2{
   width:45%;
-  justify-self: right;
 }
 
 input {
-  font-size: 1rem;
+  font-size: 1rem;    
   padding: 5px;
   height: 35px;
   width: 40vw;
@@ -417,13 +413,15 @@ option:hover,  .active{
   background-color: #151c25;
 }
 
-@media (max-width:1000px) { 
+@media (max-width:1000px) {
+  .divimgindex{
+    display: block;
+  } 
   .imgindex1{
-    width:90%;
+    width:99vw;
   }
   .imgindex2{
-    width:90%;
-    margin-left: 5%;
+    width:99vw;
   }
 }
 
@@ -435,16 +433,17 @@ option:hover,  .active{
 
 /* Fonctionne sur Firefox */
 * {
-  scrollbar-width: auto;
+  scrollbar-width: 5px;
   scrollbar-color: #d0cde6 #001c31;
 }
 
 /* Fonctionne sur Chrome, Edge, et Safari */
 *::-webkit-scrollbar {
   background-color: #001c31;
-  width: 10px;
+  width: 5px;
 }
 
 *::-webkit-scrollbar-thumb {
   background: #d0cde6;
+  border-radius: 3px;
 }
