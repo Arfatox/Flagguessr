@@ -1,14 +1,14 @@
 html, body {
-  background-color: #d0cde6;
+  background-color: #dbdbdb;
 }
 
 .body{
-  background-color: #d0cde6;
+  background-color: #dbdbdb;
   color:#000000;
 }
 
 .bodyaboutus{
-  background-color: #d0cde6;
+  background-color: #dbdbdb;
   color:#000000;
   margin-bottom:50px;
 }
@@ -43,7 +43,7 @@ h1{
 
 .form{
   display:inline-flex;
-  background-color: #d0cde6 ;
+  background-color: #dbdbdb ;
   padding: 0.3em;
   color: #080202 ;
 }
@@ -63,7 +63,7 @@ h1{
   border-color: #000000;
   border-top:#000000 ;
   border-left:#000000 ;
-  color: #d0cde6 ;
+  color: #dbdbdb ;
   width:100%;
   height:35px;
   margin-bottom:1em;
@@ -80,8 +80,8 @@ h1{
   display:inline-flex;
   border-radius: 7px;
   background-color: #080202 ;
-  border-color: #d0cde6 ;
-  color: #d0cde6 ;
+  border-color: #dbdbdb ;
+  color: #dbdbdb ;
   width:100%;
   height:35px;
   margin-bottom:1em;
@@ -98,8 +98,8 @@ h1{
   display:inline-flex;
   border-radius: 7px;
   background-color: #080202 ;
-  border-color: #d0cde6 ;
-  color: #d0cde6 ;
+  border-color: #dbdbdb ;
+  color: #dbdbdb ;
   height:35px;
   width:100%;
 }
@@ -114,8 +114,8 @@ h1{
   display:inline-flex;
   border-radius: 7px;
   background-color: #080202 ;
-  border-color: #d0cde6 ;
-  color: #d0cde6 ;
+  border-color: #dbdbdb ;
+  color: #dbdbdb ;
   width:100%;
   height:35px;
   margin-bottom:1em;
@@ -124,7 +124,7 @@ h1{
 .description{
   margin:auto;
   text-align:flex-start;
-  color: #d0cde6 ;
+  color: #dbdbdb ;
   width:50%;
 }
 
@@ -133,8 +133,8 @@ h1{
   margin:auto;
   border-radius: 7px;
   background-color: #080202 ;
-  border-color: #d0cde6 ;
-  color: #d0cde6 ;
+  border-color: #dbdbdb ;
+  color: #dbdbdb ;
   width:100%;
   height:100px;
   margin-bottom:1em;
@@ -148,8 +148,8 @@ h1{
   background-color: #080202;
   border-radius: 7px;
   padding: 0.3em;
-  border-color: #d0cde6 ;
-  color: #d0cde6 ;
+  border-color: #dbdbdb ;
+  color: #dbdbdb ;
 }
 
 .formnonfonc{
@@ -166,8 +166,8 @@ h1{
   background-color: #080202;
   border-radius: 7px;
   padding: 0.3em;
-  border-color: #d0cde6 ;
-  color: #d0cde6 ;
+  border-color: #dbdbdb ;
+  color: #dbdbdb ;
 }
 
 .navbar{
@@ -298,9 +298,9 @@ h1{
   user-select: none;
   background-color: #080202;
   padding: 0.3em;
-  border-color: #d0cde6 ;
+  border-color: #dbdbdb ;
   border-radius: 7px;
-  color: #d0cde6 ;
+  color: #dbdbdb ;
 }
 
 /* The actual popup */
@@ -391,7 +391,7 @@ input {
   outline: none;
   border-radius: 5px;
   color: #001c31;
-  background-color: #d0cde6;
+  background-color: #dbdbdb;
 /*   border-bottom: none; */
 }
 input:disabled {
@@ -431,7 +431,7 @@ datalist {
 option {
   background-color: #080202;
   padding: 4px;
-  color: #d0cde6;
+  color: #dbdbdb;
   margin-bottom: 1px;
   font-size: 0.9rem;
   cursor: pointer;
