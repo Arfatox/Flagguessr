@@ -50,7 +50,6 @@ var data = [        //liste de tout les pays
 {"pays": "Danemark", "image": "<img src=../assets/img/Ag1NFyJVFySgszKG.png class=col-12 col-lg-12 mt-4>"},
 {"pays": "Djibouti", "image": "<img src=../assets/img/WcOwNaRyGhtiClnv.png class=col-12 col-lg-12 mt-4>"},
 {"pays": "Dominique", "image": "<img src=../assets/img/U3bASK26rYqiX44q.png class=col-12 col-lg-12 mt-4>"},
-{"pays": "Écosse", "image": "<img src=../assets/img/QzIRceVpMU3LTj0A.png class=col-12 col-lg-12 mt-4>"},
 {"pays": "Égypte", "image": "<img src=../assets/img/GrWBHTeDXlmPrHKP.png class=col-12 col-lg-12 mt-4>"},
 {"pays": "Emirats Arabes Unis", "image": "<img src=../assets/img/2JSi2KT1OJwlYkWO.png class=col-12 col-lg-12 mt-4>"},
 {"pays": "Équateur", "image": "<img src=../assets/img/Yfkj4E23Lhoazln3.png class=col-12 col-lg-12 mt-4>"},
@@ -282,13 +281,15 @@ function reponse() {                                                          //
   reponse = document.querySelector("input").value                             //
   if (reponse.toLowerCase() == Pays.toLowerCase()) {                          //
     document.querySelector(".popuptext").style.backgroundColor = "#1ab315"    //
-    document.getElementById("input").disabled = true;                          //
+    document.getElementById("send").disabled = true;                          //
+    document.getElementById("refresh").style.display = "none";
    }                                                                          //
   else {                                                                      //
     document.querySelector(".popuptext").style.backgroundColor = "red"        //
-    document.getElementById("input").disabled = true;                          //
+    document.getElementById("send").disabled = true;                          //
+    document.getElementById("refresh").style.display = "block";
   }                                                                           //
-};                                                                            //
+};                                                                            //                                                                         //
 
 
 input.onblur = function () {

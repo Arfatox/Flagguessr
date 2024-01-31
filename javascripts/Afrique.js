@@ -141,10 +141,12 @@ function reponse() {                                                          //
   if (reponse.toLowerCase() == Pays.toLowerCase()) {                          //
     document.querySelector(".popuptext").style.backgroundColor = "#1ab315"    //
     document.getElementById("send").disabled = true;                          //
+    document.getElementById("refresh").style.display = "none";
    }                                                                          //
   else {                                                                      //
     document.querySelector(".popuptext").style.backgroundColor = "red"        //
     document.getElementById("send").disabled = true;                          //
+    document.getElementById("refresh").style.display = "block";
   }                                                                           //
 };                                                                            //
 

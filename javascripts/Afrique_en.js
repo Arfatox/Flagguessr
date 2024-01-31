@@ -1,60 +1,60 @@
 let Pays;
 let Reponse;
-var data = [        //liste de tout les pays
-  {"pays": "Afrique du Sud", "image": "<img src=../assets/img/EgBQmruHisxvzZXw.png class=col-12 col-lg-12 mt-4>"},
-  {"pays": "Algérie", "image": "<img src=../assets/img/xA73HzKRYZ6ClrXC.png class=col-12 col-lg-12 mt-4>"},
+var data = [
+  {"pays": "South Africa", "image": "<img src=../assets/img/EgBQmruHisxvzZXw.png class=col-12 col-lg-12 mt-4>"},
+  {"pays": "Algeria", "image": "<img src=../assets/img/xA73HzKRYZ6ClrXC.png class=col-12 col-lg-12 mt-4>"},
   {"pays": "Angola", "image": "<img src=../assets/img/u6JQn54n5sTZRP18.png class=col-12 col-lg-12 mt-4>"},
-  {"pays": "Bénin", "image": "<img src=../assets/img/hKGC0wZuMdXo2YY9.png class=col-12 col-lg-12 mt-4>"},
+  {"pays": "Benin", "image": "<img src=../assets/img/hKGC0wZuMdXo2YY9.png class=col-12 col-lg-12 mt-4>"},
   {"pays": "Botswana", "image": "<img src=../assets/img/AMAURvfspvEpjuOG.png class=col-12 col-lg-12 mt-4>"},
   {"pays": "Burkina Faso", "image": "<img src=../assets/img/OkKVtmDnBSRPePb7.png class=col-12 col-lg-12 mt-4>"},
   {"pays": "Burundi", "image": "<img src=../assets/img/GTBdpGglxCkqIsqq.png class=col-12 col-lg-12 mt-4>"},
-  {"pays": "Cameroun", "image": "<img src=../assets/img/FvkWqrVkydaLSmKH.png class=col-12 col-lg-12 mt-4>"},
-  {"pays": "Cap-Vert", "image": "<img src=../assets/img/YpztUkB7bilS2ejo.png class=col-12 col-lg-12 mt-4>"},
-  {"pays": "Comores", "image": "<img src=../assets/img/Ddb9jljlHjeQF7q9.png class=col-12 col-lg-12 mt-4>"},
-  {"pays": "Côte d'Ivoire", "image": "<img src=../assets/img/TyTJvtbxSk4vhJon.png class=col-12 col-lg-12 mt-4>"},
+  {"pays": "Cameroon", "image": "<img src=../assets/img/FvkWqrVkydaLSmKH.png class=col-12 col-lg-12 mt-4>"},
+  {"pays": "Cape Verde", "image": "<img src=../assets/img/YpztUkB7bilS2ejo.png class=col-12 col-lg-12 mt-4>"},
+  {"pays": "Comoros", "image": "<img src=../assets/img/Ddb9jljlHjeQF7q9.png class=col-12 col-lg-12 mt-4>"},
+  {"pays": "Ivory Coast", "image": "<img src=../assets/img/TyTJvtbxSk4vhJon.png class=col-12 col-lg-12 mt-4>"},
   {"pays": "Djibouti", "image": "<img src=../assets/img/WcOwNaRyGhtiClnv.png class=col-12 col-lg-12 mt-4>"},
-  {"pays": "Égypte", "image": "<img src=../assets/img/GrWBHTeDXlmPrHKP.png class=col-12 col-lg-12 mt-4>"},
-  {"pays": "Érythrée", "image": "<img src=../assets/img/C0UdE6gaFtS9B7P4.png class=col-12 col-lg-12 mt-4>"},
+  {"pays": "Egypt", "image": "<img src=../assets/img/GrWBHTeDXlmPrHKP.png class=col-12 col-lg-12 mt-4>"},
+  {"pays": "Eritrea", "image": "<img src=../assets/img/C0UdE6gaFtS9B7P4.png class=col-12 col-lg-12 mt-4>"},
   {"pays": "Eswatini", "image": "<img src=../assets/img/3XouzhK4ZKjfhIRs.png class=col-12 col-lg-12 mt-4>"},
-  {"pays": "Éthiopie", "image": "<img src=../assets/img/57N4EZNMSNudZCM8.png class=col-12 col-lg-12 mt-4>"},
+  {"pays": "Ethiopia", "image": "<img src=../assets/img/57N4EZNMSNudZCM8.png class=col-12 col-lg-12 mt-4>"},
   {"pays": "Gabon", "image": "<img src=../assets/img/8Bf6TFsecR0FDNne.png class=col-12 col-lg-12 mt-4>"},
-  {"pays": "Gambie", "image": "<img src=../assets/img/i44W0oRrsx2SeTbr.png class=col-12 col-lg-12 mt-4>"},
+  {"pays": "Gambia", "image": "<img src=../assets/img/i44W0oRrsx2SeTbr.png class=col-12 col-lg-12 mt-4>"},
   {"pays": "Ghana", "image": "<img src=../assets/img/FfiJhwBElLHYGnvo.png class=col-12 col-lg-12 mt-4>"},
-  {"pays": "Guinée Équatoriale", "image": "<img src=../assets/img/P0ZuTxMGM53XpoPp.png class=col-12 col-lg-12 mt-4>"},
-  {"pays": "Guinée", "image": "<img src=../assets/img/fjlnGBJA6u1qK5fh.png class=col-12 col-lg-12 mt-4>"},
-  {"pays": "Guinée-Bissau", "image": "<img src=../assets/img/OedQKZkr511SQmq4.png class=col-12 col-lg-12 mt-4>"},
+  {"pays": "Equatorial Guinea", "image": "<img src=../assets/img/P0ZuTxMGM53XpoPp.png class=col-12 col-lg-12 mt-4>"},
+  {"pays": "Guinea", "image": "<img src=../assets/img/fjlnGBJA6u1qK5fh.png class=col-12 col-lg-12 mt-4>"},
+  {"pays": "Guinea-Bissau", "image": "<img src=../assets/img/OedQKZkr511SQmq4.png class=col-12 col-lg-12 mt-4>"},
   {"pays": "Kenya", "image": "<img src=../assets/img/4WmKIrzDLmuOJv4U.png class=col-12 col-lg-12 mt-4>"},
   {"pays": "Lesotho", "image": "<img src=../assets/img/6Qx64b1sq8uuWfci.png class=col-12 col-lg-12 mt-4>"},
-  {"pays": "Libéria", "image": "<img src=../assets/img/vnnVjrgaf6EmK5ZD.png class=col-12 col-lg-12 mt-4>"},
-  {"pays": "Libye", "image": "<img src=../assets/img/YMgRyTQ71liiOfDs.png class=col-12 col-lg-12 mt-4>"},
+  {"pays": "Liberia", "image": "<img src=../assets/img/vnnVjrgaf6EmK5ZD.png class=col-12 col-lg-12 mt-4>"},
+  {"pays": "Libya", "image": "<img src=../assets/img/YMgRyTQ71liiOfDs.png class=col-12 col-lg-12 mt-4>"},
   {"pays": "Madagascar", "image": "<img src=../assets/img/EWWI1MSc2KAKzpjE.png class=col-12 col-lg-12 mt-4>"},
   {"pays": "Malawi", "image": "<img src=../assets/img/bRVOzx61hFwMWBiu.png class=col-12 col-lg-12 mt-4>"},
-  {"pays": "Maroc", "image": "<img src=../assets/img/I8QOCy2AsIBNLxxK.png class=col-12 col-lg-12 mt-4>"},
-  {"pays": "Maurice", "image": "<img src=../assets/img/vawyiFxeZ1IPM63f.png class=col-12 col-lg-12 mt-4>"},
-  {"pays": "Mauritanie", "image": "<img src=../assets/img/omkJa4Gn4UdPPeJd.png class=col-12 col-lg-12 mt-4>"},
-  {"pays": "Mozanbique", "image": "<img src=../assets/img/sSk1l1IIAfSIOUQg.png class=col-12 col-lg-12 mt-4>"},
-  {"pays": "Namibie", "image": "<img src=../assets/img/RCo5gzi3rmWR9zLz.png class=col-12 col-lg-12 mt-4>"},
+  {"pays": "Morocco", "image": "<img src=../assets/img/I8QOCy2AsIBNLxxK.png class=col-12 col-lg-12 mt-4>"},
+  {"pays": "Mauritius", "image": "<img src=../assets/img/vawyiFxeZ1IPM63f.png class=col-12 col-lg-12 mt-4>"},
+  {"pays": "Mauritania", "image": "<img src=../assets/img/omkJa4Gn4UdPPeJd.png class=col-12 col-lg-12 mt-4>"},
+  {"pays": "Mozambique", "image": "<img src=../assets/img/sSk1l1IIAfSIOUQg.png class=col-12 col-lg-12 mt-4>"},
+  {"pays": "Namibia", "image": "<img src=../assets/img/RCo5gzi3rmWR9zLz.png class=col-12 col-lg-12 mt-4>"},
   {"pays": "Niger", "image": "<img src=../assets/img/IBufDl78cRERAe8j.png class=col-12 col-lg-12 mt-4>"},
   {"pays": "Nigeria", "image": "<img src=../assets/img/n9b3ibe8KjDmH0p8.png class=col-12 col-lg-12 mt-4>"},
-  {"pays": "Ouganda", "image": "<img src=../assets/img/QnhN1X1wnaQctgaE.png class=col-12 col-lg-12 mt-4>"},
-  {"pays": "République Centrafriquaine", "image": "<img src=../assets/img/XnsgvlkGfjc56IcS.png class=col-12 col-lg-12 mt-4>"},
-  {"pays": "République Démocratique du Congo", "image": "<img src=../assets/img/yoRzfWyvi05V0D11.png class=col-12 col-lg-12 mt-4>"},
-  {"pays": "République du Congo", "image": "<img src=../assets/img/VlRdwVDDmRRy8uQt .png class=col-12 col-lg-12 mt-4>"},
+  {"pays": "Uganda", "image": "<img src=../assets/img/QnhN1X1wnaQctgaE.png class=col-12 col-lg-12 mt-4>"},
+  {"pays": "The Central African Republic", "image": "<img src=../assets/img/XnsgvlkGfjc56IcS.png class=col-12 col-lg-12 mt-4>"},
+  {"pays": "The Democratic Republic of the Congo", "image": "<img src=../assets/img/yoRzfWyvi05V0D11.png class=col-12 col-lg-12 mt-4>"},
+  {"pays": "The Republic of the Congo", "image": "<img src=../assets/img/VlRdwVDDmRRy8uQt.png class=col-12 col-lg-12 mt-4>"},
   {"pays": "Rwanda", "image": "<img src=../assets/img/j3vzI0RTDYSek481.png class=col-12 col-lg-12 mt-4>"},
-  {"pays": "Sao Tomé-et-Principe", "image": "<img src=../assets/img/NWQBauiYOdcZhUsE.png class=col-12 col-lg-12 mt-4>"},
-  {"pays": "Sénégal", "image": "<img src=../assets/img/qZqJTm3NY4gkyQse.png class=col-12 col-lg-12 mt-4>"},
+  {"pays": "Sao Tome and Principe", "image": "<img src=../assets/img/NWQBauiYOdcZhUsE.png class=col-12 col-lg-12 mt-4>"},
+  {"pays": "Senegal", "image": "<img src=../assets/img/qZqJTm3NY4gkyQse.png class=col-12 col-lg-12 mt-4>"},
   {"pays": "Seychelles", "image": "<img src=../assets/img/Uwx8Fpg0IVX5Vgbr.png class=col-12 col-lg-12 mt-4>"},
   {"pays": "Sierra Leone", "image": "<img src=../assets/img/jHPttlNXpXmle27i.png class=col-12 col-lg-12 mt-4>"},
-  {"pays": "Somalie", "image": "<img src=../assets/img/oJLjnQ27ROQSeTmp.png class=col-12 col-lg-12 mt-4>"},
-  {"pays": "Soudan", "image": "<img src=../assets/img/ysCFJ68rlj1gVJgr.png class=col-12 col-lg-12 mt-4>"},
-  {"pays": "Soudan du Sud", "image": "<img src=../assets/img/JKiV9SYBqQ3nK0rQ.png class=col-12 col-lg-12 mt-4>"},
-  {"pays": "Tanzanie", "image": "<img src=../assets/img/GQ1ZIpCSOGIcI0m2.png class=col-12 col-lg-12 mt-4>"},
-  {"pays": "Tchad", "image": "<img src=../assets/img/LBnHt6pvWSlrHFC3.png class=col-12 col-lg-12 mt-4>"},
+  {"pays": "Somalia", "image": "<img src=../assets/img/oJLjnQ27ROQSeTmp.png class=col-12 col-lg-12 mt-4>"},
+  {"pays": "Sudan", "image": "<img src=../assets/img/ysCFJ68rlj1gVJgr.png class=col-12 col-lg-12 mt-4>"},
+  {"pays": "South Sudan", "image": "<img src=../assets/img/JKiV9SYBqQ3nK0rQ.png class=col-12 col-lg-12 mt-4>"},
+  {"pays": "Tanzania", "image": "<img src=../assets/img/GQ1ZIpCSOGIcI0m2.png class=col-12 col-lg-12 mt-4>"},
+  {"pays": "Chad", "image": "<img src=../assets/img/LBnHt6pvWSlrHFC3.png class=col-12 col-lg-12 mt-4>"},
   {"pays": "Togo", "image": "<img src=../assets/img/J6bCdxFz8bhSklrl.png class=col-12 col-lg-12 mt-4>"},
-  {"pays": "Tunisie", "image": "<img src=../assets/img/mV0yV3zzTqvr0m4O.png class=col-12 col-lg-12 mt-4>"},
-  {"pays": "Zambie", "image": "<img src=../assets/img/2NABmcD5D5yTcQxN.png class=col-12 col-lg-12 mt-4>"},
-  {"pays": "Zimbabwe", "image": "<img src=../assets/img/KxXb3GASQZWVDgny.png class=col-12 col-lg-12 mt-4>"},
-]
+  {"pays": "Tunisia", "image": "<img src=../assets/img/mV0yV3zzTqvr0m4O.png class=col-12 col-lg-12 mt-4>"},
+  {"pays": "Zambia", "image": "<img src=../assets/img/2NABmcD5D5yTcQxN.png class=col-12 col-lg-12 mt-4>"},
+  {"pays": "Zimbabwe", "image": "<img src=../assets/img/KxXb3GASQZWVDgny.png class=col-12 col-lg-12 mt-4>"}
+];
 
 
 
@@ -141,10 +141,12 @@ function reponse() {                                                          //
   if (reponse.toLowerCase() == Pays.toLowerCase()) {                          //
     document.querySelector(".popuptext").style.backgroundColor = "#1ab315"    //
     document.getElementById("send").disabled = true;                          //
+    document.getElementById("refresh").style.display = "none";
    }                                                                          //
   else {                                                                      //
     document.querySelector(".popuptext").style.backgroundColor = "red"        //
     document.getElementById("send").disabled = true;                          //
+    document.getElementById("refresh").style.display = "block";
   }                                                                           //
 };                                                                            //
 

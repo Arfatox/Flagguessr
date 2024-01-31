@@ -1,54 +1,55 @@
 let Pays;
 let Reponse;
-var data = [        //liste de tout les pays
-  {"pays": "Albanie", "image": "<img src=../assets/img/39ZxGxwjsQ2Jl3jE.png class=col-12 col-lg-12 mt-4>"},
-  {"pays": "Allemagne", "image": "<img src=../assets/img/KXup461H2orISA2v.png class=col-12 col-lg-12 mt-4>"},
-  {"pays": "Andorre", "image": "<img src=../assets/img/1Eg2JrIj5MTvaeli.png class=col-12 col-lg-12 mt-4>"},
-  {"pays": "Autriche", "image": "<img src=../assets/img/dppjyd7n5KEBZeeZ.png class=col-12 col-lg-12 mt-4>"},
-  {"pays": "Belgique", "image": "<img src=../assets/img/O51efZoXsF1DKPW9.png class=col-12 col-lg-12 mt-4>"},
-  {"pays": "Biélorussie", "image": "<img src=../assets/img/UKXOBjDjjr9xxZQl.png class=col-12 col-lg-12 mt-4>"},
-  {"pays": "Bosnie-Herzégovine", "image": "<img src=../assets/img/0CtcCUUr6OZKqKSM.png class=col-12 col-lg-12 mt-4>"},
-  {"pays": "Bulgarie", "image": "<img src=../assets/img/111630xzaS3Fs9Iq.png class=col-12 col-lg-12 mt-4>"},
-  {"pays": "Chypre", "image": "<img src=../assets/img/TMr4pDd47q64YSzq.png class=col-12 col-lg-12 mt-4>"},
-  {"pays": "Croatie", "image": "<img src=../assets/img/bdM4r67Oz5RXLOOS.png class=col-12 col-lg-12 mt-4>"},
-  {"pays": "Danemark", "image": "<img src=../assets/img/Ag1NFyJVFySgszKG.png class=col-12 col-lg-12 mt-4>"},
-  {"pays": "Espagne", "image": "<img src=../assets/img/lp2RAVuDMOdK6DHn.png class=col-12 col-lg-12 mt-4>"},
-  {"pays": "Estonie", "image": "<img src=../assets/img/29LaDiy8F3OYs7JS.png class=col-12 col-lg-12 mt-4>"},
-  {"pays": "Finlande", "image": "<img src=../assets/img/E3ON51CakBb9GdfB.png class=col-12 col-lg-12 mt-4>"},
+var data = [        //list of all countries
+  {"pays": "Albania", "image": "<img src=../assets/img/39ZxGxwjsQ2Jl3jE.png class=col-12 col-lg-12 mt-4>"},
+  {"pays": "Germany", "image": "<img src=../assets/img/KXup461H2orISA2v.png class=col-12 col-lg-12 mt-4>"},
+  {"pays": "Andorra", "image": "<img src=../assets/img/1Eg2JrIj5MTvaeli.png class=col-12 col-lg-12 mt-4>"},
+  {"pays": "Austria", "image": "<img src=../assets/img/dppjyd7n5KEBZeeZ.png class=col-12 col-lg-12 mt-4>"},
+  {"pays": "Belgium", "image": "<img src=../assets/img/O51efZoXsF1DKPW9.png class=col-12 col-lg-12 mt-4>"},
+  {"pays": "Belarus", "image": "<img src=../assets/img/UKXOBjDjjr9xxZQl.png class=col-12 col-lg-12 mt-4>"},
+  {"pays": "Bosnia and Herzegovina", "image": "<img src=../assets/img/0CtcCUUr6OZKqKSM.png class=col-12 col-lg-12 mt-4>"},
+  {"pays": "Bulgaria", "image": "<img src=../assets/img/111630xzaS3Fs9Iq.png class=col-12 col-lg-12 mt-4>"},
+  {"pays": "Cyprus", "image": "<img src=../assets/img/TMr4pDd47q64YSzq.png class=col-12 col-lg-12 mt-4>"},
+  {"pays": "Croatia", "image": "<img src=../assets/img/bdM4r67Oz5RXLOOS.png class=col-12 col-lg-12 mt-4>"},
+  {"pays": "Denmark", "image": "<img src=../assets/img/Ag1NFyJVFySgszKG.png class=col-12 col-lg-12 mt-4>"},
+  {"pays": "Spain", "image": "<img src=../assets/img/lp2RAVuDMOdK6DHn.png class=col-12 col-lg-12 mt-4>"},
+  {"pays": "Estonia", "image": "<img src=../assets/img/29LaDiy8F3OYs7JS.png class=col-12 col-lg-12 mt-4>"},
+  {"pays": "Finland", "image": "<img src=../assets/img/E3ON51CakBb9GdfB.png class=col-12 col-lg-12 mt-4>"},
   {"pays": "France", "image": "<img src=../assets/img/jLVgHt9OheV49LmL.png class=col-12 col-lg-12 mt-4>"},
-  {"pays": "Grèce", "image": "<img src=../assets/img/aI3y09G5wknudQuo.png class=col-12 col-lg-12 mt-4>"},
-  {"pays": "Hongrie", "image": "<img src=../assets/img/Im6OIVi8poBdXvVy.png class=col-12 col-lg-12 mt-4>"},
-  {"pays": "Irlande", "image": "<img src=../assets/img/UXMLg69pzSVxaGIv.png class=col-12 col-lg-12 mt-4>"},
-  {"pays": "Islande", "image": "<img src=../assets/img/b1XH17VkiqWWzJQt.png class=col-12 col-lg-12 mt-4>"},
-  {"pays": "Italie", "image": "<img src=../assets/img/uF084aeC7a36YFj0.png class=col-12 col-lg-12 mt-4>"},
+  {"pays": "Greece", "image": "<img src=../assets/img/aI3y09G5wknudQuo.png class=col-12 col-lg-12 mt-4>"},
+  {"pays": "Hungary", "image": "<img src=../assets/img/Im6OIVi8poBdXvVy.png class=col-12 col-lg-12 mt-4>"},
+  {"pays": "Ireland", "image": "<img src=../assets/img/UXMLg69pzSVxaGIv.png class=col-12 col-lg-12 mt-4>"},
+  {"pays": "Iceland", "image": "<img src=../assets/img/b1XH17VkiqWWzJQt.png class=col-12 col-lg-12 mt-4>"},
+  {"pays": "Italy", "image": "<img src=../assets/img/uF084aeC7a36YFj0.png class=col-12 col-lg-12 mt-4>"},
   {"pays": "Kazakhstan", "image": "<img src=../assets/img/0TJvVdVnqFnEPT7A.png class=col-12 col-lg-12 mt-4>"},
-  {"pays": "Lettonie", "image": "<img src=../assets/img/Ilr5YfERByvn28kO.png class=col-12 col-lg-12 mt-4>"},
+  {"pays": "Latvia", "image": "<img src=../assets/img/Ilr5YfERByvn28kO.png class=col-12 col-lg-12 mt-4>"},
   {"pays": "Liechtenstein", "image": "<img src=../assets/img/a2LXUXLB3xaoBYqh.png class=col-12 col-lg-12 mt-4>"},
-  {"pays": "Lituanie", "image": "<img src=../assets/img/Ro7eBCrFRugQiUkr.png class=col-12 col-lg-12 mt-4>"},
+  {"pays": "Lithuania", "image": "<img src=../assets/img/Ro7eBCrFRugQiUkr.png class=col-12 col-lg-12 mt-4>"},
   {"pays": "Luxembourg", "image": "<img src=../assets/img/IDokNyxV74liUoQl.png class=col-12 col-lg-12 mt-4>"},
-  {"pays": "Macédoine du Nord", "image": "<img src=../assets/img/I3zj2rM8OAIgN2pO.png class=col-12 col-lg-12 mt-4>"},
-  {"pays": "Malte", "image": "<img src=../assets/img/24iCpjVbsx4dNxa1.png class=col-12 col-lg-12 mt-4>"},
-  {"pays": "Moldavie", "image": "<img src=../assets/img/k8G1PJPkllTsz6l0.png class=col-12 col-lg-12 mt-4>"},
+  {"pays": "North Macedonia", "image": "<img src=../assets/img/I3zj2rM8OAIgN2pO.png class=col-12 col-lg-12 mt-4>"},
+  {"pays": "Malta", "image": "<img src=../assets/img/24iCpjVbsx4dNxa1.png class=col-12 col-lg-12 mt-4>"},
+  {"pays": "Moldova", "image": "<img src=../assets/img/k8G1PJPkllTsz6l0.png class=col-12 col-lg-12 mt-4>"},
   {"pays": "Monaco", "image": "<img src=../assets/img/ub9V7MMlpLFOcPXb.png class=col-12 col-lg-12 mt-4>"},
-  {"pays": "Monténégro", "image": "<img src=../assets/img/sXJJ0sFmHaTOFXfQ.png class=col-12 col-lg-12 mt-4>"},
-  {"pays": "Norvège", "image": "<img src=../assets/img/9lrkIF1r2L5hZET8.png class=col-12 col-lg-12 mt-4>"},
-  {"pays": "Pays-Bas", "image": "<img src=../assets/img/WlsgTYN88lkgVCJA.png class=col-12 col-lg-12 mt-4>"},
-  {"pays": "Pologne", "image": "<img src=../assets/img/Yv0HW7bFglOOD1tr.png class=col-12 col-lg-12 mt-4>"},
+  {"pays": "Montenegro", "image": "<img src=../assets/img/sXJJ0sFmHaTOFXfQ.png class=col-12 col-lg-12 mt-4>"},
+  {"pays": "Norway", "image": "<img src=../assets/img/9lrkIF1r2L5hZET8.png class=col-12 col-lg-12 mt-4>"},
+  {"pays": "Netherlands", "image": "<img src=../assets/img/WlsgTYN88lkgVCJA.png class=col-12 col-lg-12 mt-4>"},
+  {"pays": "Poland", "image": "<img src=../assets/img/Yv0HW7bFglOOD1tr.png class=col-12 col-lg-12 mt-4>"},
   {"pays": "Portugal", "image": "<img src=../assets/img/Kh4EEmlUhhnV0wGH.png class=col-12 col-lg-12 mt-4>"},
-  {"pays": "République Tchèque", "image": "<img src=../assets/img/r3Mxtsn9ojT2mJi1.png class=col-12 col-lg-12 mt-4>"},
-  {"pays": "Roumanie", "image": "<img src=../assets/img/etzpjLPntii4g1GP.png class=col-12 col-lg-12 mt-4>"},
-  {"pays": "Royaume-Uni", "image": "<img src=../assets/img/T0990QGWVErpVMeQ.png class=col-12 col-lg-12 mt-4>"},
-  {"pays": "Russie", "image": "<img src=../assets/img/MRZvfcMCtq3KsKrR.png class=col-12 col-lg-12 mt-4>"},
-  {"pays": "Saint-Marin", "image": "<img src=../assets/img/B2nGzcxZDgk39mUE.png class=col-12 col-lg-12 mt-4>"},
-  {"pays": "Serbie", "image": "<img src=../assets/img/UUz5nnfg2J4JKtox.png class=col-12 col-lg-12 mt-4>"},
-  {"pays": "Slovaquie", "image": "<img src=../assets/img/qxnPusNs4fhaney8.png class=col-12 col-lg-12 mt-4>"},
-  {"pays": "Slovénie", "image": "<img src=../assets/img/puYRoSHvRW33RW3W.png class=col-12 col-lg-12 mt-4>"},
-  {"pays": "Suède", "image": "<img src=../assets/img/tmLweftvfvt29R5t.png class=col-12 col-lg-12 mt-4>"},
-  {"pays": "Suisse", "image": "<img src=../assets/img/GNZ9hn50nOwlNUxm.png class=col-12 col-lg-12 mt-4>"},
-  {"pays": "Turquie", "image": "<img src=../assets/img/LcTbOo8I0HmBvR1Y.png class=col-12 col-lg-12 mt-4>"},
+  {"pays": "Czech Republic", "image": "<img src=../assets/img/r3Mxtsn9ojT2mJi1.png class=col-12 col-lg-12 mt-4>"},
+  {"pays": "Romania", "image": "<img src=../assets/img/etzpjLPntii4g1GP.png class=col-12 col-lg-12 mt-4>"},
+  {"pays": "United Kingdom", "image": "<img src=../assets/img/T0990QGWVErpVMeQ.png class=col-12 col-lg-12 mt-4>"},
+  {"pays": "Russia", "image": "<img src=../assets/img/MRZvfcMCtq3KsKrR.png class=col-12 col-lg-12 mt-4>"},
+  {"pays": "San Marino", "image": "<img src=../assets/img/B2nGzcxZDgk39mUE.png class=col-12 col-lg-12 mt-4>"},
+  {"pays": "Serbia", "image": "<img src=../assets/img/UUz5nnfg2J4JKtox.png class=col-12 col-lg-12 mt-4>"},
+  {"pays": "Slovakia", "image": "<img src=../assets/img/qxnPusNs4fhaney8.png class=col-12 col-lg-12 mt-4>"},
+  {"pays": "Slovenia", "image": "<img src=../assets/img/puYRoSHvRW33RW3W.png class=col-12 col-lg-12 mt-4>"},
+  {"pays": "Sweden", "image": "<img src=../assets/img/tmLweftvfvt29R5t.png class=col-12 col-lg-12 mt-4>"},
+  {"pays": "Switzerland", "image": "<img src=../assets/img/GNZ9hn50nOwlNUxm.png class=col-12 col-lg-12 mt-4>"},
+  {"pays": "Turkey", "image": "<img src=../assets/img/LcTbOo8I0HmBvR1Y.png class=col-12 col-lg-12 mt-4>"},
   {"pays": "Ukraine", "image": "<img src=../assets/img/dXEHVNyCbABpEEoE.png class=col-12 col-lg-12 mt-4>"},
-  {"pays": "Vatican", "image": "<img src=../assets/img/v80gPOL9u2zcJ7Us.png class=col-12 col-lg-12 mt-4>"},
+  {"pays": "Vatican City", "image": "<img src=../assets/img/v80gPOL9u2zcJ7Us.png class=col-12 col-lg-12 mt-4>"},
 ]
+
 
 
 
@@ -151,12 +152,14 @@ function reponse() {                                                          //
   if (reponse.toLowerCase() == Pays.toLowerCase()) {                          //
     document.querySelector(".popuptext").style.backgroundColor = "#1ab315"    //
     document.getElementById("send").disabled = true;                          //
+    document.getElementById("refresh").style.display = "none";
    }                                                                          //
   else {                                                                      //
     document.querySelector(".popuptext").style.backgroundColor = "red"        //
     document.getElementById("send").disabled = true;                          //
+    document.getElementById("refresh").style.display = "block";
   }                                                                           //
-};                                                                            //
+};                                                                            //                                                                            //
 
 
 function popup() {                                                            //Fonction qui affiche le popup
