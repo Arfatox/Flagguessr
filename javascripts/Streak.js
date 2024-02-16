@@ -297,6 +297,7 @@ document.addEventListener('keydown', function(event) {
     else {                                                                      //
       document.querySelector(".popuptext").style.backgroundColor = "red"        //
       document.getElementById("input").disabled = true;                         //
+      document.getElementById("refresh").style.display = "block";
     }  
   }
 });
