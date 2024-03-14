@@ -267,12 +267,30 @@ document.querySelector(".random").innerHTML = data[random].image     //Grâce a 
 btn = document.querySelector(".popup")                               //Quand on appuie sur le bouton avec la class popup
 btn.addEventListener("click", reponse);                              //
 
-oui = document.getElementById("input").onkeydown = function(e) {    //Fonction pour envoyer la reponse avec la touche entree
-  if (e.code == "Enter") {                                          //
-    reponse()
-    popup()                                                       //
-  }                                                                 //
-};                                                                  //
+entrer = document.getElementById("input").onkeydown = function(e) {    
+  if (e.code == "Enter") {
+    popup()
+  }
+};
+
+
+document.addEventListener('keydown', function(event) {
+  if (event.code == 'Enter') {
+    console.log("ok")                                                           //le popup avec fond vert si bon rouge sinon
+    reponse = document.querySelector("input").value                             //
+    if (reponse.toLowerCase() == Pays.toLowerCase()) {                          //
+      document.querySelector(".popuptext").style.backgroundColor = "#1ab315"    //
+      document.getElementById("input").disabled = true; 
+      btnnewflag = document.getElementById("divnewflag")
+      btnnewflag.style.display  = 'inline-flex';
+    }                                                                           //
+    else {                                                                      //
+      document.querySelector(".popuptext").style.backgroundColor = "red"        //
+      document.getElementById("input").disabled = true;                         //
+      document.getElementById("refresh").style.display = "block";
+    }  
+  }
+});                                                                  //
 
 
 function reponse() {                                                          //Fonction qui vérifie la réponse et l'affiche sur 
