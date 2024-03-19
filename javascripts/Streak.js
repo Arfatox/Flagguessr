@@ -273,7 +273,7 @@ function addActive(x) {
 random = Math.floor(Math.random() * data.length)                     //Séléction de manière aléatoire du pays/ de l'image
 Pays = data[random].pays                                             //Et stockage dans la variable pays
 document.querySelector(".random").innerHTML = data[random].image     //Grâce a la délimitation établie avec les virgules
-
+document.getElementById("input").focus()
 btn = document.querySelector(".popup")                               //Quand on appuie sur le bouton avec la class popup
 btn.addEventListener("click", reponse);                              //
 
@@ -283,17 +283,16 @@ entrer = document.getElementById("input").onkeydown = function(e) {
   }
 };
 
-
 document.addEventListener('keydown', function(event) {
   if (event.code == 'Enter') {
-    console.log("ok")                                                           //le popup avec fond vert si bon rouge sinon
+    console.log("ok1")                                                           //le popup avec fond vert si bon rouge sinon
     reponse = document.querySelector("input").value                             //
     if (reponse.toLowerCase() == Pays.toLowerCase()) {                          //
       document.querySelector(".popuptext").style.backgroundColor = "#1ab315"    //
       document.getElementById("input").disabled = true; 
       btnnewflag = document.getElementById("divnewflag")
       btnnewflag.style.display  = 'inline-flex';
-    }                                                                           //
+    }
     else {                                                                      //
       document.querySelector(".popuptext").style.backgroundColor = "red"        //
       document.getElementById("input").disabled = true;                         //
@@ -303,9 +302,8 @@ document.addEventListener('keydown', function(event) {
 });
 
 
-
 function reponse() {                                                          //Fonction qui vérifie la réponse et l'affiche sur 
-  console.log("ok")                                                           //le popup avec fond vert si bon rouge sinon
+  console.log("ok2")                                                           //le popup avec fond vert si bon rouge sinon
   reponse = document.querySelector("input").value                             //
   if (reponse.toLowerCase() == Pays.toLowerCase()) {                          //
     document.querySelector(".popuptext").style.backgroundColor = "#1ab315"    //
@@ -351,6 +349,7 @@ function reload(){
     streak++;
     document.getElementById("afficher").textContent = streak;
     resetDatalist();
+    document.getElementById("input").focus()
   } 
   random = Math.floor(Math.random() * data.length)  
   Pays = data[random].pays
@@ -359,10 +358,24 @@ function reload(){
 }
 
 
-
-
 function popup() {                                                            //Fonction qui affiche le popup
   var popup = document.getElementById("myPopup");                             //
   popup.classList.toggle("show");                                             //
   document.getElementById("nomPays").innerHTML = Pays;                        //
-}                                                                             //
+}    
+
+
+var inputtab = document.querySelector("input");
+var optionstab = Array.from(document.querySelector("datalist").option).map(function(el){
+return el.innerHTML;
+}); //Optional if you have data
+inputtab.addEventListener('keypress', function(e){
+  if(e.Code == 9){
+    var relevantOptions = optionstab.filter(function(option){
+      return option.toLowerCase().includes(inputtab.value.toLowerCase());
+    }); // filtering the data list based on input query
+    if(relevantOptions.length > 0){
+      inputtab.value = relevantOptions.shift(); //Taking the first
+    }
+  }
+});
